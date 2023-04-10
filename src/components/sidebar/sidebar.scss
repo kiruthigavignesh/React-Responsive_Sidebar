@@ -1,0 +1,138 @@
+
+.bars{
+    display: none;
+}
+
+
+
+.sidebar{
+    flex: 1;
+    border-right: 0.5px solid rgb(233, 233, 233);
+    height: 100vh;
+    background-color: #57419d;
+   
+    
+    .top{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+.logo{
+    font-style: 20px;
+    font-weight: bold;
+    color: #ffcb83;
+}
+    }
+hr{
+    height: 0;
+    border: 0.5px solid rgb(233, 233, 233);
+    
+
+    }
+    .center{
+        padding-left: 10px;
+     
+    
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    
+    .title{
+        color:white;
+        font-size: 10px;
+        font-weight: 800;
+        margin-top: 15px;
+        margin-bottom: 15px;  
+    }
+    
+     li{
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        cursor: pointer;
+        &:hover{
+            background-color: #7967b1;
+            span{
+                color: #ffcb83;
+            }
+        }
+        .icon{
+            padding-right: 10px;
+            color: #ffcb83;
+            font-size: 20px;
+         }
+         span{
+            font-size: 15px;
+            color: white;
+            padding-left: 10px;
+         }
+    
+}
+}
+}
+}
+// @media screen and (max-width:1200px){
+// .title{
+//     display: none;
+// }
+
+@media screen and (min-width:1200px){
+    .sidebar{
+            
+          flex: 1;
+            height: 100vh; 
+            
+overflow: auto;
+            
+        } 
+        .bars{
+            display: none;
+        }  
+    }
+@media screen and (max-width:990px){
+.sidebar{
+    flex: 2;
+        height: 120vh; 
+      
+    } 
+    
+    span{
+        display: block;
+    }
+}
+@media screen and (max-width:768px){
+   
+    .sidebar{
+        
+      position: fixed;
+    
+      background-color: #57419d;
+      width: 35%;
+      padding-right: 1rem;
+      height: 100%;
+      overflow: auto;
+     }
+     .logo{
+       
+     }
+    span{
+        display: block;
+    }
+    .bars{
+        display: flex;
+        position: fixed;
+        top: 11px;
+        background: #ffcb83;
+        padding: 5px;
+        border-radius: 10px;
+       
+      }
+      .close{
+        left: -60%;
+      }
+      /* width */
+
+    
+}
